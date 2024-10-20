@@ -97,19 +97,24 @@ def download_drivers(drivers, base_url, download_path):
     for driver_path in drivers:
         # Construire le chemin complet local en recréant l'arborescence
         local_path = os.path.join(download_path, os.path.dirname(driver_path))
-        print(f"download_path : {download_path}")
-        print(f"driver_path : {driver_path}")
-        print(f"local_path : {local_path}")
+        # print(f"download_path : {download_path}")
+        # print(f"driver_path : {driver_path}")
+        # print(f"local_path : {local_path}")
         
         local_path = local_path.replace('/', '\\')
         final_path = f"{download_path}{local_path}"
-        print(f"final_path : {final_path}")
+        # print(f"final_path : {final_path}")
         os.makedirs(final_path, exist_ok=True)  # Créer l'arborescence si elle n'existe pas
 
         # Télécharger le fichier
         driver_url = f"{base_url}/{driver_path}"
         driver_name = os.path.basename(driver_path)
         file_path = os.path.join(final_path, driver_name)
+
+        # Vérifier si le fichier existe déjà
+        if os.path.exists(file_path):
+            # print(f"Le fichier {driver_name} existe déjà, téléchargement ignoré.")
+            continue
 
         try:
             print(f"Téléchargement de {driver_name} depuis {driver_url}")
@@ -123,7 +128,7 @@ def download_drivers(drivers, base_url, download_path):
             print(f"Erreur lors du téléchargement de {driver_name} : {e}")
 
 def main():
-    model_name = input("Entrez le nom du modèle (SystemID) : ")
+    model_name = input("Entrez le nom du modèle (R740, R660, ...) : ")
     model_OS = input("Entrez l'OS du modèle (WN64 ou LN64) : ")
     # model_name = "R740"
     # model_OS = "WN64"
@@ -141,14 +146,14 @@ def main():
     
     if drivers:
         # Afficher un résumé des drivers
-        print(f"\nListe des drivers pour {model_name} :")
-        for driver in drivers:
-            print(f"- {driver}")
+        # print(f"\nListe des drivers pour {model_name} :")
+        # for driver in drivers:
+        #    print(f"- {driver}")
         
         
         # Télécharger les drivers
-        # download_path = os.path.join("downloads", model_name)
-        # download_drivers(drivers, base_url, download_path)
+        download_path = os.path.join("downloads", model_name)
+        download_drivers(drivers, base_url, download_path)
     else:
         print(f"Aucun driver trouvé pour le modèle {model_name}.")
 
