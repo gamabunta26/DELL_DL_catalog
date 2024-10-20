@@ -7,7 +7,6 @@
 #================================
 # IMPORT
 #================================
-
 import os
 import requests
 import gzip
@@ -15,16 +14,22 @@ import shutil
 import xml.etree.ElementTree as ET
 
 
-# URL du fichier compressé contenant le catalogue de drivers
-URL = 'https://downloads.dell.com/catalog/Catalog.gz'
-
+#================================
+# Variables globales
+#================================
+base_url = "https://downloads.dell.com"  # Base de l'URL de téléchargement
+URL_catalog = 'https://downloads.dell.com/catalog/Catalog.gz' # URL du fichier compressé contenant le catalogue de drivers
+base_folder_catalog = "catalog"
+base_folder_download = "download"
 
 # Fonction pour télécharger et décompresser le fichier Catalog.gz
-def download_and_extract_catalog(url, dest_folder="catalog"):
-    catalog_path = os.path.join(dest_folder, "Catalog.gz")
-    extracted_path = os.path.join(dest_folder, "Catalog.xml")
+# IN  : https://downloads.dell.com/catalog/Catalog.gz url du catalog
+# OUT : \catalog\Catalog.xml    local path vers le fichier catalogue
+def download_and_extract_catalog(url):
+    catalog_path = os.path.join(base_folder_catalog, "Catalog.gz")
+    extracted_path = os.path.join(base_folder_catalog, "Catalog.xml")
     
-    os.makedirs(dest_folder, exist_ok=True)
+    os.makedirs(base_folder_catalog, exist_ok=True)
     
     # Télécharger le fichier Catalog.gz
     try:
@@ -46,9 +51,10 @@ def download_and_extract_catalog(url, dest_folder="catalog"):
         print(f"Erreur lors du téléchargement ou de la décompression : {e}")
         return None
 
-
-
 # Fonction pour parser le fichier XML et trouver le systemID pour un modèle donné
+# IN  : - catalog_file  : \catalog\Catalog.xml
+# IN  : - model_name    : R740
+# OUT : - systemID      : 0715
 def find_systemID(catalog_file, model_name):
     tree = ET.parse(catalog_file)
     root = tree.getroot()
@@ -63,9 +69,8 @@ def find_systemID(catalog_file, model_name):
     print(f"Modèle {model_name} non trouvé.")
     return None
 
-
 # Fonction pour extraire et lister les drivers associés à un systemID donné
-def list_drivers(catalog_file, systemID):
+def list_drivers(catalog_file, systemID, model_OS):
     tree = ET.parse(catalog_file)
     root = tree.getroot()
 
@@ -78,12 +83,14 @@ def list_drivers(catalog_file, systemID):
     for component in root.findall(".//SoftwareComponent"):
         for system in component.findall(".//Model"):
             if system.get('systemID') == systemID:
+                # print(f"Le chemin contient '{model_OS}'.")
                 driver_path = component.get('path')
-                full_url = f"/{driver_path}"
-                drivers.append(full_url)
+                # Test pour voir si "WN64" est présent dans driver_path
+                if model_OS in driver_path:
+                    full_url = f"/{driver_path}"
+                    drivers.append(full_url)
     
     return drivers
-
 
 # Fonction pour recréer l'arborescence de dossiers et télécharger les fichiers
 def download_drivers(drivers, base_url, download_path):
@@ -116,12 +123,13 @@ def download_drivers(drivers, base_url, download_path):
             print(f"Erreur lors du téléchargement de {driver_name} : {e}")
 
 def main():
-    # model_name = input("Entrez le nom du modèle (SystemID) : ")
-    model_name = "R740"
-    base_url = "https://downloads.dell.com"  # Base de l'URL de téléchargement
+    model_name = input("Entrez le nom du modèle (SystemID) : ")
+    model_OS = input("Entrez l'OS du modèle (WN64 ou LN64) : ")
+    # model_name = "R740"
+    # model_OS = "WN64"
     
-    catalog_file = download_and_extract_catalog(URL)
-
+    # telecharger et extraire le catalogue
+    catalog_file = download_and_extract_catalog(URL_catalog)
 
     # Trouver le systemID associé au modèle
     systemID = find_systemID(catalog_file, model_name)
@@ -129,7 +137,7 @@ def main():
         return
     
     # Lister les drivers associés à ce systemID
-    drivers = list_drivers(catalog_file, systemID)
+    drivers = list_drivers(catalog_file, systemID, model_OS)
     
     if drivers:
         # Afficher un résumé des drivers
@@ -137,9 +145,10 @@ def main():
         for driver in drivers:
             print(f"- {driver}")
         
+        
         # Télécharger les drivers
-        download_path = os.path.join("downloads", model_name)
-        download_drivers(drivers, base_url, download_path)
+        # download_path = os.path.join("downloads", model_name)
+        # download_drivers(drivers, base_url, download_path)
     else:
         print(f"Aucun driver trouvé pour le modèle {model_name}.")
 
