@@ -23,8 +23,8 @@ base_folder_catalog = "catalog"
 base_folder_download = "download"
 
 # Fonction pour télécharger et décompresser le fichier Catalog.gz
-# IN  : https://downloads.dell.com/catalog/Catalog.gz url du catalog
-# OUT : \catalog\Catalog.xml    local path vers le fichier catalogue
+# IN  : url : https://downloads.dell.com/catalog/Catalog.gz url du catalog
+# OUT : extracted_path : \catalog\Catalog.xml    local path vers le fichier catalogue
 def download_and_extract_catalog(url):
     catalog_path = os.path.join(base_folder_catalog, "Catalog.gz")
     extracted_path = os.path.join(base_folder_catalog, "Catalog.xml")
@@ -70,6 +70,10 @@ def find_systemID(catalog_file, model_name):
     return None
 
 # Fonction pour extraire et lister les drivers associés à un systemID donné
+# IN  : - catalog_file  : \catalog\Catalog.xml
+# IN  : - systemID  : 0714
+# IN  : - model_OS  : WN64
+# OUT : drivers : une liste de driverss
 def list_drivers(catalog_file, systemID, model_OS):
     tree = ET.parse(catalog_file)
     root = tree.getroot()
@@ -152,8 +156,9 @@ def main():
         
         
         # Télécharger les drivers
-        download_path = os.path.join("downloads", model_name)
+        download_path = os.path.join(base_folder_download, model_name)
         download_drivers(drivers, base_url, download_path)
+        print(f"Tous les drivers du modèle {model_name} sont présent dans le dossier {base_folder_download}")
     else:
         print(f"Aucun driver trouvé pour le modèle {model_name}.")
 
