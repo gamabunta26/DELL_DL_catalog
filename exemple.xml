@@ -1,0 +1,381 @@
+<Manifest baseLocation="downloads.dell.com" baseLocationAccessProtocols="HTTPS" dateTime="2024-07-09T11:01:50+05:30" identifier="e882dfcb-a0cc-403c-9d32-4d56fe72dc1e" releaseID="CPGNF" version="24.07.09" predecessorID="00ad50a8-318a-490d-8818-82b24e63e90d">
+
+  <SoftwareBundle bundleID="PH2721H_WIN64.905" bundleType="BTW64" dateTime="2024-10-08T00:44:02-05:00" identifier="ecda4938-8fb9-4bcb-acb1-11f793349e00" path="PER740-WIN64-PH2721H.xml" releaseID="PH2721H_WIN64.905" schemaVersion="2.4" size="4430197400" vendorVersion="PH2721H.905" predecessorID="c338fe48-d7bc-4bc1-b8bf-0a6b03ccd7d2">
+    <Name>
+      <Display lang="en">System Bundle (Windows x64)PER740 v905</Display>
+    </Name>
+    <ComponentType value="SBDL">
+      <Display lang="en">Dell System Bundle</Display>
+    </ComponentType>
+    <Description>
+      <Display lang="en">System Bundle (Windows x64)PER740 v905</Display>
+    </Description>
+    <Category value="SM">
+      <Display lang="en">Systems Management</Display>
+    </Category>
+    <TargetSystems>
+      <Brand key="3" prefix="PE">
+        <Display lang="en"><![CDATA[PowerEdge]]></Display>
+        <Model systemID="0715" systemIDType="BIOS">
+          <Display lang="en">R740</Display>
+        </Model>
+      </Brand>
+    </TargetSystems>
+    <TargetOSes>
+      <OperatingSystem osCode="WIN64" osVendor="Microsoft">
+        <Display lang="en">Microsoft Windows x64</Display>
+      </OperatingSystem>
+    </TargetOSes>
+    <RevisionHistory>
+      <Display lang="en" />
+    </RevisionHistory>
+    <ImportantInfo URL="http://www.dell.com/support">
+      <Display lang="en" />
+    </ImportantInfo>
+    <Contents>
+      <Package path="Express-Flash-PCIe-SSD_Firmware_TTGM9_WN64_KPYA8D3Q_A00_01.EXE" />
+      <Package path="Network_Driver_FPMGT_WN64_23.01.11.60_230.1.116.0.EXE" />
+      <Package path="SAS-Drive_Firmware_7PGV1_WN64_SYS5_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_MX4DP_WN64_HH58_A00_03.EXE" />
+      <Package path="Express-Flash-PCIe-SSD_Firmware_5CM3G_WN64_2.5.0_A06_01.EXE" />
+      <Package path="SAS-Drive_Firmware_D7RNT_WN64_DSA4_A00_01.EXE" />
+      <Package path="Fibre-Channel_Firmware_J5Y1Y_WN64_09.01.07_A00-00.EXE" />
+      <Package path="Fibre-Channel_Driver_Y64RD_WN64_10.0.4_A00-00_03.EXE" />
+      <Package path="SAS-Drive_Firmware_XYFV2_WN64_GS07_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_P8DY7_WN64_VT18_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_XNGNT_WN64_DSLA_A00_02.EXE" />
+      <Package path="Network_Firmware_234W1_WN64_23.0.8_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_0V8XY_WN64_KT7B_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_TF6TF_WN64_CALF_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_6DH0W_WN64_BD48_A00_02.EXE" />
+      <Package path="SAS-RAID_Firmware_96M5G_WN64_51.16.0-5150_A17.EXE" />
+      <Package path="Network_Driver_GJ9N4_WN64_23.00.0_230.1.116.0.EXE" />
+      <Package path="SAS-Drive_Firmware_CD2WP_WN64_TT56_A00.EXE" />
+      <Package path="Network_Firmware_V4CRT_WN64_8.2.11_A00.EXE" />
+      <Package path="Memory_Firmware_498KF_WN64_01.02.00.5446_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_3CFT0_WN64_PV07_A00.EXE" />
+      <Package path="SAS-RAID_Driver_44R58_WN64_7.726.01.0_A09.EXE" />
+      <Package path="Systems-Management_Application_7152M_WN64_5.3.1.0_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_912Y9_WN64_LW0A_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_YRJ44_WN64_CSNE_A00.EXE" />
+      <Package path="SAS-RAID_Driver_85R54_WN64_5.11.0.0003_A00.EXE" />
+      <Package path="SAS-RAID_Driver_T244W_WN64_6.604.06.00_A01_08.EXE" />
+      <Package path="SAS-Drive_Firmware_2R4CX_WN64_BS05_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_YM8KY_WN64_E013_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_GMW4P_WN64_NB33_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_RWJHJ_WN64_PAL9_A00_01.EXE" />
+      <Package path="Network_Driver_0CFWX_WN64_35.07.00_A00-00.EXE" />
+      <Package path="SAS-Drive_Firmware_5M6GD_WN64_DSF3_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_7FV43_WN64_B326_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_N1WM9_WN64_EJ09_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_5YH6J_WN64_2T51_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_83FF4_WN64_KT5C_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_H12N2_WN64_LT21_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_VJY6V_WN64_DWA4_A00_01.EXE" />
+      <Package path="SAS-Non-RAID_Firmware_124X2_WN64_16.17.01.00_A08_04.EXE" />
+      <Package path="SAS-Drive_Firmware_CF4VF_WN64_SBS6_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_441CN_WN64_US07_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_2VVM2_WN64_EAL9_A00.EXE" />
+      <Package path="Systems-Management_Application_MPVTK_WN64_2.1.0.0_A00.EXE" />
+      <Package path="Network_Firmware_2CMVW_WN64_22.41.10.00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_7HYHH_WN64_K968_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_J3RRK_WN64_DSF8_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_5WMK8_WN64_BJ07_A00.EXE" />
+      <Package path="Network_Driver_K0YRF_WN64_36.25.13_A00-00.EXE" />
+      <Package path="SAS-Drive_Firmware_50N1P_WN64_EE0A_A00_01.EXE" />
+      <Package path="SAS-RAID_Driver_CX0MY_WN64_7.719.6.0_A08_01.EXE" />
+      <Package path="SAS-Drive_Firmware_0NKFF_WN64_J17L_A00.EXE" />
+      <Package path="Network_Driver_20K96_WN64_21.0.0_A00.EXE" />
+      <Package path="Network_Firmware_DG6R9_WN64_8.6.2_A00.EXE" />
+      <Package path="Express-Flash-PCIe-SSD_Firmware_34C36_WN64_1.2.1_A06_02.EXE" />
+      <Package path="Serial-ATA_Firmware_J96XG_WN64_UT07_A00.EXE" />
+      <Package path="SAS-Non-RAID_Driver_W95PT_WN64_2.61.41.00_A01_04.EXE" />
+      <Package path="Serial-ATA_Firmware_F73C5_WN64_GD05_A00.EXE" />
+      <Package path="Network_Driver_VYWY1_WN64_36.20.02_A00-00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_09HKW_WN64_LA0B_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_7Y6NV_WN64_FK39_A00_01.EXE" />
+      <Package path="Express-Flash-PCIe-SSD_Firmware_CR0HC_WN64_QDV1DP17_A03_01.EXE" />
+      <Package path="SAS-RAID_Firmware_3P39V_WN64_2.5.13.3024_A07_06.EXE" />
+      <Package path="SAS-Drive_Firmware_D64H2_WN64_ST7C_A00.EXE" />
+      <Package path="Chipset_Driver_4DDMJ_WN64_10.1.19913.8607_A00_01.EXE" />
+      <Package path="Network_Firmware_8P81X_WN64_16.25.01_A00-00.EXE" />
+      <Package path="Serial-ATA_Firmware_4DW70_WN64_DL6B_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_CX0H8_WN64_J008_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_NDG7N_WN64_B710_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_RJ0WY_WN64_K003_A00_01.EXE" />
+      <Package path="Drivers-for-OS-Deployment_Application_NR0JY_WN64_24.01.04_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_3J3JR_WN64_HF58_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_27MDM_WN64_RS07_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_8MDXT_WN64_FJ40_A00.EXE" />
+      <Package path="Network_Driver_JWPN6_WN64_35.05.00_A00-00.EXE" />
+      <Package path="Serial-ATA_Firmware_T3TJ4_WN64_GA04_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_FMKMG_WN64_DSG8_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_3FW1V_WN64_NT71_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_38PHF_WN64_BH07_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_V141M_WN64_DL5C_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_G04C8_WN64_4S0C_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_0942Y_WN64_GB03_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_MGF80_WN64_GC02_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_4G5GY_WN64_EH0D_A00_01.EXE" />
+      <Package path="SAS-Non-RAID_Firmware_0GP3C_WN64_24.15.14.00_A04.EXE" />
+      <Package path="Serial-ATA_Firmware_MR6RH_WN64_PB53_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_KT63Y_WN64_J008_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_NVWNH_WN64_EF08_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_JTW3W_WN64_K403_A00_01.EXE" />
+      <Package path="Firmware_VV85D_WN64_4.35_A00_08.EXE" />
+      <Package path="Serial-ATA_Firmware_93P7P_WN64_HE59_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_H3VHX_WN64_EC16_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_FFN16_WN64_ST38_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_2CY65_WN64_DD02_A00.EXE" />
+      <Package path="SAS-Non-RAID_Firmware_WP87W_WN64_16.17.01.00_A10_04.EXE" />
+      <Package path="SAS-Drive_Firmware_92VPG_WN64_PSLB_A00_03.EXE" />
+      <Package path="SAS-Drive_Firmware_8829H_WN64_EM05_A00_03.EXE" />
+      <Package path="Memory_Firmware_R0CH7_WN64_9772_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_3DTV4_WN64_DE08_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_J81VT_WN64_HG59_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_M5GJ1_WN64_DB34_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_YY7FX_WN64_TS03_A00.EXE" />
+      <Package path="Diagnostics_Application_0G1JH_WN64_6.0_A00_01.EXE" />
+      <Package path="SAS-RAID_Firmware_NYKX7_WN64_25.5.9.0001_A15_01.EXE" />
+      <Package path="SAS-Drive_Firmware_0HG6Y_WN64_CSLE_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_7YCK2_WN64_HJ58_A00_04.EXE" />
+      <Package path="SAS-Drive_Firmware_68X4C_WN64_KU45_A00_01.EXE" />
+      <Package path="SAS-RAID_Firmware_MYJJF_WN64_52.26.0-5179_A03.EXE" />
+      <Package path="SAS-Drive_Firmware_8W21G_WN64_PU07_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_YH8C3_WN64_VS18_A00.EXE" />
+      <Package path="Firmware_60K1J_WN64_2.52_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_61VGT_WN64_ST5E_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_PT7D8_WN64_GA09_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_NHVNM_WN64_SYA5_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_8W5WF_WN64_G138_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_5V4D3_WN64_DWG8_A00_03.EXE" />
+      <Package path="SAS-Drive_Firmware_8457G_WN64_TSC6_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_T21WT_WN64_C10E_A00.EXE" />
+      <Package path="Express-Flash-PCIe-SSD_Firmware_3JJHC_WN64_1.2.2_A04.EXE" />
+      <Package path="SAS-Non-RAID_Driver_MF8G0_WN64_2.51.25.02_A00_07.EXE" />
+      <Package path="SAS-Drive_Firmware_66RK9_WN64_DH02_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_N01GW_WN64_DZ02_A00_01.EXE" />
+      <Package path="SAS-Non-RAID_Firmware_NKNVC_WN64_16.17.01.00_A08_03.EXE" />
+      <Package path="SAS-Drive_Firmware_GY7F4_WN64_UM08_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_NGPR2_WN64_BA48_A00_02.EXE" />
+      <Package path="Serial-ATA_Firmware_F4J0V_WN64_GB57_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_JMP8Y_WN64_KT3C_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_5G3PW_WN64_SBW6_A00.EXE" />
+      <Package path="Fibre-Channel_Firmware_2JN41_WN64_16.25.11_A00-00.EXE" />
+      <Package path="Network_Firmware_RXW7G_WN64_22.91.5_03.EXE" />
+      <Package path="SAS-Drive_Firmware_6CKWM_WN64_AX0B_A00.EXE" />
+      <Package path="SAS-RAID_Firmware_700GG_WN64_25.5.9.0001_A17_01.EXE" />
+      <Package path="SAS-Drive_Firmware_NKGWD_WN64_3D03_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_68MF7_WN64_DBB2_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_6D4CG_WN64_FK5D_A00.EXE" />
+      <Package path="Fibre-Channel_Firmware_VH2Y0_WN64_16.25.11_A00-00.EXE" />
+      <Package path="SAS-Drive_Firmware_K53JY_WN64_DWLA_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_CDP2W_WN64_ESL8_A00_02.EXE" />
+      <Package path="Serial-ATA_Firmware_CHJGV_WN64_DL43_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_RWK48_WN64_CAJD_A00.EXE" />
+      <Package path="Network_Firmware_89VV2_WN64_23.0.8_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_4PPHJ_WN64_DWF8_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_8JHX9_WN64_EU45_A00.EXE" />
+      <Package path="Network_Driver_XYJ8C_WN64_21.80.16.60_218.0.169.0.EXE" />
+      <Package path="SAS-Drive_Firmware_17XP8_WN64_SSED_A00_02.EXE" />
+      <Package path="Serial-ATA_Firmware_R9YDC_WN64_J408_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_NFFHM_WN64_EI0D_A00_02.EXE" />
+      <Package path="SAS-RAID_Firmware_MVC3P_WN64_2.5.13.4008_A00_03.EXE" />
+      <Package path="SAS-RAID_Driver_WC00M_WN64_7.726.01.0_A04.EXE" />
+      <Package path="SAS-Drive_Firmware_3HTHY_WN64_S545_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_333Y2_WN64_K803_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_V3DJM_WN64_MU03_A00_04.EXE" />
+      <Package path="Network_Driver_49X84_WN64_21.80.3_218.0.169.2_01.EXE" />
+      <Package path="Network_Firmware_TYN0C_WN64_20.41.10.00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_X4FMC_WN64_FU45_A00.EXE" />
+      <Package path="Network_Firmware_XY16R_WN64_16.35.30.06_01.EXE" />
+      <Package path="Serial-ATA_Firmware_35T9D_WN64_GA3B_A00_01.EXE" />
+      <Package path="Fibre-Channel_Driver_FXK17_WN64_36.25.13_A00-00.EXE" />
+      <Package path="Network_Firmware_1H4PM_WN64_26.41.10.00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_8VV2X_WN64_NS10_A00_03.EXE" />
+      <Package path="Network_Firmware_0J8T5_WN64_12.28.45.12.EXE" />
+      <Package path="SAS-Drive_Firmware_NYK8R_WN64_EB04_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_J12RT_WN64_CSJA_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_MGW91_WN64_LS21_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_KVGNJ_WN64_SWS5_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_Y1P10_WN64_DL6R_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_H72VG_WN64_F005_A00_01.EXE" />
+      <Package path="Fibre-Channel_Firmware_F9VR4_WN64_03.08.19_A00-00.EXE" />
+      <Package path="Serial-ATA_Firmware_FY2YR_WN64_GX5D_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_RRWVT_WN64_CPE9_A00_01.EXE" />
+      <Package path="Network_Driver_WKY4N_WN64_1.9.1_A00.EXE" />
+      <Package path="Fibre-Channel_Driver_FD7W2_WN64_12.01.12_A00-00.EXE" />
+      <Package path="SAS-Drive_Firmware_111TG_WN64_P158_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_CPP97_WN64_B02A_A00.EXE" />
+      <Package path="SAS-RAID_Driver_P74H3_WN64_5.11.0.0003_A00.EXE" />
+      <Package path="Network_Driver_VMPP8_WN64_05.050.09.EXE" />
+      <Package path="SAS-Drive_Firmware_TH3C3_WN64_PSE7_A00.EXE" />
+      <Package path="Serial-ATA_Firmware_6JJWV_WN64_DABB_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_57MM2_WN64_C40E_A00.EXE" />
+      <Package path="iDRAC-with-Lifecycle-Controller_Firmware_XTFXJ_WN64_7.00.00.173_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_GTG81_WN64_EK06_A00.EXE" />
+      <Package path="SAS-RAID_Firmware_M9DDF_WN64_51.16.0-5148_A18.EXE" />
+      <Package path="Express-Flash-PCIe-SSD_Firmware_610WN_WN64_1.5.0_A06_01.EXE" />
+      <Package path="SAS-Drive_Firmware_00D32_WN64_SSC7_A00_02.EXE" />
+      <Package path="SAS-Drive_Firmware_1DJXX_WN64_AS10_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_0128H_WN64_SBT5_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_J4X0T_WN64_LC09_A00.EXE" />
+      <Package path="Memory_Firmware_N4JYH_WN64_9532_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_59M5K_WN64_CSDA_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_TGCJ8_WN64_EA05_A00.EXE" />
+      <Package path="SAS-RAID_Firmware_NCXX4_WN64_52.26.0-5179_A04.EXE" />
+      <Package path="Serial-ATA_Firmware_9RF8X_WN64_DL7A_A00.EXE" />
+      <Package path="Network_Firmware_PY7FC_WN64_14.32.20.04.EXE" />
+      <Package path="Serial-ATA_Firmware_0HF04_WN64_NT10_A00_01.EXE" />
+      <Package path="Network_Firmware_H9RJP_WN64_02.42.50.58.EXE" />
+      <Package path="Network_Driver_N5GYM_WN64_18.3.0_A00_04.EXE" />
+      <Package path="SAS-Drive_Firmware_1HWVN_WN64_NSF2_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_6Y6YT_WN64_CSFD_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_X59KC_WN64_KV45_A00_01.EXE" />
+      <Package path="Systems-Management_Application_KW3YN_WN64_4.2.0.0_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_HJ5GD_WN64_NM10_A00_01.EXE" />
+      <Package path="Serial-ATA_Firmware_W0YR1_WN64_DBC4_A00_02.EXE" />
+      <Package path="BIOS_F8GPH_WN64_2.22.2.EXE" />
+      <Package path="Serial-ATA_Firmware_R29XR_WN64_DL2E_A00.EXE" />
+      <Package path="SAS-Non-RAID_Driver_W5MRN_WN64_2.61.41.00_A03_03.EXE" />
+      <Package path="Serial-ATA_Firmware_N26JT_WN64_RT07_A00_01.EXE" />
+      <Package path="Network_Driver_G6M58_WN64_24.04.03_01.EXE" />
+      <Package path="SAS-Drive_Firmware_MG6NK_WN64_KSCC_A00_01.EXE" />
+      <Package path="Network_Firmware_WVM0R_WN64_23.0.8_A00_01.EXE" />
+      <Package path="SAS-Drive_Firmware_24J9V_WN64_LS0C_A00.EXE" />
+      <Package path="Network_Firmware_1R0W0_WN64_22.5.7_A00.EXE" />
+      <Package path="Fibre-Channel_Firmware_D76P7_WN64_02.03.02_A00-00.EXE" />
+      <Package path="SAS-Drive_Firmware_3CRY1_WN64_DT32_A00.EXE" />
+      <Package path="Network_Firmware_9KYR0_WN64_16.20.00_A00-00.EXE" />
+      <Package path="Network_Firmware_TNXW1_WN64_22.5.7_A00.EXE" />
+      <Package path="SAS-Drive_Firmware_GW3V7_WN64_NT32_A00_01.EXE" />
+      <Package path="Diagnostics_Application_R30YT_WN64_4301A73_4301.74_01.EXE" />
+      <Package path="Network_Driver_6JHVK_WN64_23.0.0_A00.EXE" />
+      <Package path="Network_Firmware_P5P4D_WN64_22.92.07.50_01.EXE" />
+      <Package path="Network_Driver_3JTWY_WN64_22.70.1_229.2.61.0_01.EXE" />
+      <Package path="Systems-Management_Application_7Y30Y_WN64_5.3.1.0_A00.EXE" />
+      <Package path="Systems-Management_Application_WWVDF_WN64_11.0.0.0_A00.EXE" />
+      <Package path="Network_Driver_3W75D_WN64_22.92.06.10_229.2.61.0_02.EXE" />
+    </Contents>
+  </SoftwareBundle>
+  <SoftwareComponent dateTime="2024-08-14T16:49:51+05:30" dellVersion="A00" hashMD5="ac46ec0a4fe6f3f624712db8a9698f34" packageID="XTFXJ" packageType="LW64" path="FOLDER11945679M/1/iDRAC-with-Lifecycle-Controller_Firmware_XTFXJ_WN64_7.00.00.173_A00.EXE" rebootRequired="false" releaseDate="August 14, 2024" releaseID="XTFXJ" schemaVersion="2.4" size="228096600" vendorVersion="7.00.00.173">
+    <Name>
+      <Display lang="en"><![CDATA[iDRAC 7.00.00.173]]></Display>
+    </Name>
+    <ComponentType value="FRMW">
+      <Display lang="en"><![CDATA[Firmware]]></Display>
+    </ComponentType>
+    <Description>
+      <Display lang="en"><![CDATA[iDRAC 7.00.00.173]]></Display>
+    </Description>
+    <LUCategory value="iDRAC with Lifecycle Controller">
+      <Display lang="en"><![CDATA[iDRAC with Lifecycle Controller]]></Display>
+    </LUCategory>
+    <Category value="iDRAC with Lifecycle Controller">
+      <Display lang="en"><![CDATA[iDRAC with Lifecycle Controller]]></Display>
+    </Category>
+    <ImportantInfo URL="https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=XTFXJ">
+      <Display lang="en"><![CDATA[NA]]></Display>
+    </ImportantInfo>
+    <SupportedDevices>
+      <Device componentID="25227" embedded="0">
+        <Display lang="en"><![CDATA[iDRAC with Lifecycle Controller]]></Display>
+      </Device>
+    </SupportedDevices>
+    <RevisionHistory>
+      <Display lang="en"><![CDATA[iDRAC 7.00.00.173]]></Display>
+    </RevisionHistory>
+    <Criticality value="1">
+      <Display lang="en"><![CDATA[Recommended]]></Display>
+    </Criticality>
+    <SupportedSystems>
+      <Brand key="3" prefix="PE">
+        <Display lang="en"><![CDATA[PowerEdge]]></Display>
+        <Model systemID="0838" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R940xa]]></Display>
+        </Model>
+        <Model systemID="0737" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R740xd]]></Display>
+        </Model>
+        <Model systemID="088F" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R240]]></Display>
+        </Model>
+        <Model systemID="0890" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[T340]]></Display>
+        </Model>
+        <Model systemID="0748" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[FC640]]></Display>
+        </Model>
+        <Model systemID="07F7" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R7415]]></Display>
+        </Model>
+        <Model systemID="07CB" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[T440]]></Display>
+        </Model>
+        <Model systemID="07F8" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R6415]]></Display>
+        </Model>
+        <Model systemID="09CA" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[XE7420]]></Display>
+        </Model>
+        <Model systemID="0766" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[MX840c]]></Display>
+        </Model>
+        <Model systemID="09C7" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[XE2420]]></Display>
+        </Model>
+        <Model systemID="088E" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R340]]></Display>
+        </Model>
+        <Model systemID="0716" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R640]]></Display>
+        </Model>
+        <Model systemID="0891" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[T140]]></Display>
+        </Model>
+        <Model systemID="0717" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[C4140]]></Display>
+        </Model>
+        <Model systemID="0715" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R740]]></Display>
+        </Model>
+        <Model systemID="07CA" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R540]]></Display>
+        </Model>
+        <Model systemID="0749" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[M640P]]></Display>
+        </Model>
+        <Model systemID="0747" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[M640]]></Display>
+        </Model>
+        <Model systemID="07FC" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R840]]></Display>
+        </Model>
+        <Model systemID="07C9" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R440]]></Display>
+        </Model>
+        <Model systemID="08C2" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R740xd2]]></Display>
+        </Model>
+        <Model systemID="0728" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R940]]></Display>
+        </Model>
+        <Model systemID="07E5" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[T640]]></Display>
+        </Model>
+        <Model systemID="07F9" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[R7425]]></Display>
+        </Model>
+        <Model systemID="09CB" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[XE7440]]></Display>
+        </Model>
+        <Model systemID="0765" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[MX740c]]></Display>
+        </Model>
+        <Model systemID="0757" systemIDType="BIOS">
+          <Display lang="en"><![CDATA[C6420]]></Display>
+        </Model>
+      </Brand>
+    </SupportedSystems>
+  </SoftwareComponent>
+</Manifest>
