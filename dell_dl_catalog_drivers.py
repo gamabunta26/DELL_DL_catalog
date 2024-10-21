@@ -121,46 +121,48 @@ def download_drivers(drivers, base_url, download_path):
             continue
 
         try:
-            print(f"Téléchargement de {driver_name} depuis {driver_url}")
+            print(f"Téléchargement de {driver_url}")
             with requests.get(driver_url, stream=True) as r:
                 r.raise_for_status()
                 with open(file_path, 'wb') as f:
                     for chunk in r.iter_content(chunk_size=8192):
                         f.write(chunk)
-            print(f"{driver_name} téléchargé avec succès.")
+            # print(f"{driver_name} téléchargé avec succès.")
         except requests.exceptions.RequestException as e:
             print(f"Erreur lors du téléchargement de {driver_name} : {e}")
 
 def main():
-    model_name = input("Entrez le nom du modèle (R740, R660, ...) : ")
-    model_OS = input("Entrez l'OS du modèle (WN64 ou LN64) : ")
+    # model_name = input("Entrez le nom du modèle (R740, R660, ...) : ")
+    # model_OS = input("Entrez l'OS du modèle (WN64 ou LN64) : ")
     # model_name = "R740"
-    # model_OS = "WN64"
-    
-    # telecharger et extraire le catalogue
-    catalog_file = download_and_extract_catalog(URL_catalog)
+    model_OS = "WN64"
+    tab_model = ["R740", "R730", "R660"]
 
-    # Trouver le systemID associé au modèle
-    systemID = find_systemID(catalog_file, model_name)
-    if not systemID:
-        return
-    
-    # Lister les drivers associés à ce systemID
-    drivers = list_drivers(catalog_file, systemID, model_OS)
-    
-    if drivers:
-        # Afficher un résumé des drivers
-        # print(f"\nListe des drivers pour {model_name} :")
-        # for driver in drivers:
-        #    print(f"- {driver}")
+    for model_name in tab_model:
+        # telecharger et extraire le catalogue
+        catalog_file = download_and_extract_catalog(URL_catalog)
+
+        # Trouver le systemID associé au modèle
+        systemID = find_systemID(catalog_file, model_name)
+        if not systemID:
+            return
         
+        # Lister les drivers associés à ce systemID
+        drivers = list_drivers(catalog_file, systemID, model_OS)
         
-        # Télécharger les drivers
-        download_path = os.path.join(base_folder_download, model_name)
-        download_drivers(drivers, base_url, download_path)
-        print(f"Tous les drivers du modèle {model_name} sont présent dans le dossier {base_folder_download}")
-    else:
-        print(f"Aucun driver trouvé pour le modèle {model_name}.")
+        if drivers:
+            # Afficher un résumé des drivers
+            # print(f"\nListe des drivers pour {model_name} :")
+            # for driver in drivers:
+            #    print(f"- {driver}")
+            
+            
+            # Télécharger les drivers
+            download_path = os.path.join(base_folder_download, model_name)
+            download_drivers(drivers, base_url, download_path)
+            print(f"Tous les drivers du modèle {model_name} sont présent dans le dossier {base_folder_download}")
+        else:
+            print(f"Aucun driver trouvé pour le modèle {model_name}.")
 
 if __name__ == "__main__":
     main()
