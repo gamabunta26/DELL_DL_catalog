@@ -1,5 +1,5 @@
 # DELL_DL_catalog
-DELL_DL_catalog
+automatic Download dell firmware & drivers to create offline repository 
 
 
 
