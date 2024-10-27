@@ -158,9 +158,10 @@ def main():
             
             
             # Télécharger les drivers
-            download_path = os.path.join(base_folder_download, model_name)
+            # download_path = os.path.join(base_folder_download, model_name)
+            download_path = base_folder_download
             download_drivers(drivers, base_url, download_path)
-            print(f"Tous les drivers du modèle {model_name} sont présent dans le dossier {base_folder_download}")
+            print(f"Tous les drivers du modèle {model_name} sont présents dans le dossier {base_folder_download}")
         else:
             print(f"Aucun driver trouvé pour le modèle {model_name}.")
 
